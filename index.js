@@ -1,5 +1,5 @@
 const scrape = require('website-scraper');
-const websiteUrl = 'http://lifeinsys.com/item/malena/demonstration/';
+const websiteUrl = "<Enter website URL>";
 
 scrape({
     urls: [websiteUrl],
@@ -10,7 +10,7 @@ scrape({
     maxDepth: 50,
     prettifyUrls: true,
     filenameGenerator: 'bySiteStructure',
-    directory: './mywebs'
+    directory: './<Directory Name>'
 }).then((data) => {
     console.log("Entire website succesfully downloaded");
 }).catch((err) => {
